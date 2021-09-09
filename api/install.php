@@ -140,10 +140,10 @@ if (!empty($_POST)) {
     $config->stage    = INSTALL_WELCOME;
 
     $config->dbtype   = empty($distro->dbtype) ? '' : $distro->dbtype; // let distro skip dbtype selection
-    $config->dbhost   = empty($distro->dbhost) ? 'localhost' : $distro->dbhost; // let distros set dbhost
-    $config->dbuser   = empty($distro->dbuser) ? '' : $distro->dbuser; // let distros set dbuser
-    $config->dbpass   = '';
-    $config->dbname   = 'moodle';
+    $config->dbhost   = empty($distro->dbhost) ? 'moodlewa.mysql.uhserver.com' : $distro->dbhost; // let distros set dbhost
+    $config->dbuser   = empty($distro->dbuser) ? 'moodleuserwa' : $distro->dbuser; // let distros set dbuser
+    $config->dbpass   = 'W19a09n84@mo';
+    $config->dbname   = 'moodlewa';
     $config->prefix   = 'mdl_';
     $config->dbport   = empty($distro->dbport) ? '' : $distro->dbport;
     $config->dbsocket = empty($distro->dbsocket) ? '' : $distro->dbsocket;
